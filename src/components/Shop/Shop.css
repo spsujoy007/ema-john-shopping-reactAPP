@@ -1,0 +1,32 @@
+.containerShop {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    padding: 0 0 0 7%;
+    column-gap: 25px;
+}
+
+.all-products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding-top: 2%;
+}
+
+.cartMenu {
+    text-align: center;
+    background-color: #FFE0B3;
+}
+
+.cart-summury {
+    position: sticky;
+    top: 100px;
+}
+
+/* for mobile devices  */
+
+@media only screen and (max-width: 620px) {
+    .all-products {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
